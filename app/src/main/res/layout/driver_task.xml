@@ -13,70 +13,68 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
 
         <TextView
-            android:id="@+id/master_start"
+            android:id="@+id/driver_start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="起点" />
 
-        <EditText
-            android:id="@+id/master_startedit"
+        <TextView
+            android:id="@+id/driver_startText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:ems="10"
-            android:hint="输入你当前的位置"/>
+            android:ems="10" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="40dp">
 
         <TextView
-            android:id="@+id/master_destination"
+            android:id="@+id/driver_destination"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="终点" />
 
-        <EditText
-            android:id="@+id/master_destinationedit"
+        <TextView
+            android:id="@+id/driver_destinationText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:ems="10"
-            android:hint="输入目的地" />
+            android:ems="10" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="40dp">
 
         <TextView
-            android:id="@+id/master_attention"
+            android:id="@+id/attention"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="留言：" />
 
-        <EditText
-            android:id="@+id/master_attentionEdit"
+        <TextView
+            android:id="@+id/driver_attentionText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:ems="10"
-            android:hint="提醒司机注意事项" />
+            android:ems="10" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="40dp">
 
         <ImageView
-            android:id="@+id/master_carstyle"
+            android:id="@+id/driver_car_style"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -84,7 +82,7 @@
             android:src="@drawable/style" />
 
         <ImageView
-            android:id="@+id/master_goodSize"
+            android:id="@+id/driver_good_Size"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -92,7 +90,7 @@
             android:src="@drawable/goodsize" />
 
         <ImageView
-            android:id="@+id/master_payservice"
+            android:id="@+id/driver_pay_service"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_weight="1"
@@ -106,49 +104,28 @@
         android:layout_marginTop="10dp">
 
         <TextView
-            android:id="@+id/master_car_style"
+            android:id="@+id/driver_carstyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:clickable="true"
-            android:gravity="center"
-            android:text="货车类型" />
+            android:gravity="center" />
 
         <TextView
-            android:id="@+id/master_good_Size"
+            android:id="@+id/driver_goodsize"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:clickable="true"
-            android:gravity="center"
-            android:text="货物大小" />
+            android:gravity="center" />
 
         <TextView
-            android:id="@+id/master_pay_service"
+            android:id="@+id/driver_payservice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:clickable="true"
-            android:gravity="center"
-            android:text="贷款服务" />
+            android:gravity="center" />
 
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/begin"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="40dp"
-            android:background="#CCFFFF"
-            android:text="发货" />
-
-    </LinearLayout>
-
 </LinearLayout>

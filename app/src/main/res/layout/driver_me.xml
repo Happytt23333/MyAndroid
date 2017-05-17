@@ -14,7 +14,7 @@
         android:layout_height="wrap_content" >
 
         <ImageView
-            android:id="@+id/master_imageView"
+            android:id="@+id/driver_imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_users"
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/master_count"
+            android:id="@+id/driver_count"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="用户名                                            >"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/master_phonenumber"
+            android:id="@+id/driver_phonenumber"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="  电话                                              >"
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/master_codenumber"
+            android:id="@+id/driver_codenumber"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="  余额                                              >"
@@ -63,7 +63,7 @@
         android:layout_height="wrap_content" >
 
         <Button
-            android:id="@+id/master_address"
+            android:id="@+id/driver_address"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text=" 常用地址                                        >"
