@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".DriversActivity" />
-        <activity android:name=".MasterActivity"></activity>
+        <activity android:name=".MasterActivity" />
+        <activity android:name=".TaskEdit"></activity>
     </application>
 
 </manifest>
