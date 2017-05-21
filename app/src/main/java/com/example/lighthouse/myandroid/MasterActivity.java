@@ -58,14 +58,14 @@ public class MasterActivity extends AppCompatActivity {
 
         //设置task_list适配器
         TaskAdapter adapter = new TaskAdapter(MasterActivity.this, activity_master,task_list);
-//        ListView task_list = (ListView)findViewById(R.id.list);
-//        task_list.setAdapter(adapter);
+        ListView task_list = (ListView)findViewById(R.id.master_task_list);
+        task_list.setAdapter(adapter);
     }
 
     public void replaceFragment(Fragment fragment){
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.replace(R.id.framelayout,fragment);
+        transaction.replace(R.id.master_framelayout,fragment);
         transaction.commit();
     }
 
