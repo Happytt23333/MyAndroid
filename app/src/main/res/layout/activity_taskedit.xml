@@ -30,26 +30,29 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <ImageView
+        <Button
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:id = "@+id/smallcar"
-            android:src="@drawable/smallcar"
-            android:layout_weight="1"/>
+            android:background="@drawable/tuoyuan"
+            android:layout_weight="1"
+            android:text="小货车"/>
 
-        <ImageView
+        <Button
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:id = "@+id/midcar"
-            android:src="@drawable/midcar"
-            android:layout_weight="1"/>
+            android:background="@drawable/tuoyuan"
+            android:layout_weight="1"
+            android:text="中货车"/>
 
-        <ImageView
+        <Button
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:id = "@+id/largecar"
-            android:src="@drawable/largecar"
-            android:layout_weight="1"/>
+            android:background="@drawable/tuoyuan"
+            android:layout_weight="1"
+            android:text="大货车"/>
     </LinearLayout>
 
     <LinearLayout
@@ -75,7 +78,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/tuoyuan"
-            android:id="@+id/small"
+            android:id="@+id/task_small"
             android:text="小件"
             android:layout_weight="1"/>
 
@@ -84,7 +87,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/tuoyuan"
-            android:id="@+id/middle"
+            android:id="@+id/task_middle"
             android:text="中件"
             android:layout_weight="1"/>
 
@@ -92,7 +95,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/tuoyuan"
-            android:id="@+id/large"
+            android:id="@+id/task_large"
             android:text="大件"
             android:layout_weight="1"/>
     </LinearLayout>
@@ -132,6 +135,27 @@
             android:layout_weight="1"
             android:background="#CCFFFF"/>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskedit1"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskedit2"
+            android:layout_weight="1"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskedit3"
+            android:layout_weight="1"/>
+    </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
@@ -139,6 +163,5 @@
         android:layout_gravity="center"
         android:id="@+id/confirm"
         android:text="确定"
-        android:layout_marginTop="40dp"
         android:background="#CCFFFF"/>
 </LinearLayout>

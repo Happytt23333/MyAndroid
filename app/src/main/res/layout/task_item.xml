@@ -11,7 +11,7 @@
 
     <ImageView
         android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         app:srcCompat="@drawable/logo"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
@@ -38,4 +38,27 @@
         android:layout_alignBottom="@+id/imageView"
         android:layout_toEndOf="@+id/task_start"
         android:id="@+id/task_attention" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/task_attention"
+        android:layout_toEndOf="@+id/task_attention">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/item_style"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/item_size"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/item_paypal"/>
+    </LinearLayout>
 </RelativeLayout>

@@ -1,5 +1,6 @@
 package com.example.lighthouse.myandroid;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -7,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -60,6 +63,19 @@ public class MasterActivity extends AppCompatActivity {
         TaskAdapter adapter = new TaskAdapter(MasterActivity.this, activity_master,task_list);
         ListView task_list = (ListView)findViewById(R.id.master_task_list);
         task_list.setAdapter(adapter);
+
+        EditText master_start = (EditText)findViewById(R.id.master_startedit);
+        EditText master_destination = (EditText)findViewById(R.id.master_destinationedit);
+        EditText master_attention = (EditText)findViewById(R.id.master_attentionEdit);
+
+        ImageView taskedit = (ImageView)findViewById(R.id.master_carstyle);
+        taskedit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MasterActivity.this,TaskEdit.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void replaceFragment(Fragment fragment){
@@ -70,25 +86,25 @@ public class MasterActivity extends AppCompatActivity {
     }
 
     public void initTask(){
-        Task one = new Task(R.drawable.logo,"刘安镇","江山市","明天8点前送到");
+        Task one = new Task(R.drawable.logo,"刘安镇","江山市","明天8点前送到","小货车","小件","定金支付");
         task_list.add(one);
 
-        Task two = new Task(R.drawable.logo,"一里县","江山市","尽量少颠簸");
+        Task two = new Task(R.drawable.logo,"一里县","江山市","尽量少颠簸","小货车","中件","货到付款");
         task_list.add(two);
 
-        Task three = new Task(R.drawable.logo,"青山镇","江山市","尽量少颠簸");
+        Task three = new Task(R.drawable.logo,"青山镇","江山市","尽量少颠簸","大货车","大件","定金支付");
         task_list.add(three);
 
-        Task four = new Task(R.drawable.logo,"蒋家村","龙游市","尽量少颠簸");
+        Task four = new Task(R.drawable.logo,"蒋家村","龙游市","尽量少颠簸","中货车","中件","定金支付");
         task_list.add(four);
 
-        Task five = new Task(R.drawable.logo,"五里县","江山市","尽量少颠簸");
+        Task five = new Task(R.drawable.logo,"五里县","江山市","尽量少颠簸","大货车","大件","货到付款");
         task_list.add(five);
 
-        Task six = new Task(R.drawable.logo,"六合县","江山市","尽量少颠簸");
+        Task six = new Task(R.drawable.logo,"六合县","江山市","尽量少颠簸","小货车","中件","货到付款");
         task_list.add(one);
 
-        Task seven = new Task(R.drawable.logo,"七横镇","江山市","尽量少颠簸");
+        Task seven = new Task(R.drawable.logo,"七横镇","江山市","尽量少颠簸","小货车","小件","定金支付");
         task_list.add(one);
     }
 }
