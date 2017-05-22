@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
             passwordEdit.setText(password);
             remember.setChecked(true);
         }
-
+        login = (Button)findViewById(R.id.login);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
                 Boolean driver = driverCheck.isChecked();
                 Boolean master = masterCheck.isChecked();
 
-                if(name.equals("张三") && password.equals("123456")){
+                if(name.equals("zhangsan") && password.equals("abcdefg")){
                     editor = pref.edit();
                     if(driver && (!master)){
                         if(remember.isChecked()){
@@ -71,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this,"Name or password is invalid",Toast.LENGTH_LONG).show();
                 }
 
-                if(name.equals("李四") && password.equals("654321")){
+                if(name.equals("lisi") && password.equals("abcdefg")){
                     editor = pref.edit();
                     if((!driver) && master){
                         if(remember.isChecked()){

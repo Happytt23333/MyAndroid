@@ -114,7 +114,5 @@ public class TaskEdit extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
 }

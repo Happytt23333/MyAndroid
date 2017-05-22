@@ -11,8 +11,8 @@
     tools:context="com.example.lighthouse.myandroid.TitleLayout">
 
     <Button
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
         android:id="@+id/list"
         android:background="@drawable/list"
         android:layout_alignParentBottom="true"
@@ -20,16 +20,16 @@
         android:layout_marginStart="27dp" />
 
     <Button
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/task"
         android:background="@drawable/task" />
 
     <Button
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
         android:id="@+id/me"
         android:background="@drawable/me"
         android:layout_alignParentBottom="true"
